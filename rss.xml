@@ -4,7 +4,7 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Sun, 03 Sep 2023 01:03:36 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Sep 2023 15:49:02 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
         <item>
@@ -12,46 +12,70 @@
             <guid>eddc7557e7db470d86469e1ae2f9e266</guid>
             <pubDate>Sun, 03 Sep 2023 00:30:24 GMT</pubDate>
             <content:encoded><![CDATA[<p>I didn't have a green thumb before this, but it was a cool learning experience. I started by growing with no nutrients and walmart soil, and the results were pretty sad. I slowly upgraded from there. I watched a ton of youtube videos and after 3 grows, I'd say I finally feel like I kinda sorta know the beginning's of what I'm doing lol. Tara likes training the plants to grow sideways so you get multiple mega buds at the top instead of just 1. We got like 6 off one plant this time, it was awesome! And kinda therapuetic, like doing a bonzai. If you haven't grown before, these are the things I can't live without now.</p>
-<ul>
-<li>
-<p><a title="https://amzn.to/44y0Isx" href="https://amzn.to/44y0Isx">Decent pump I leave plugged in. I run it for 3 minutes everyday and that works pretty well</a></p>
-<ul>
-<li>$29.99</li>
-</ul>
-</li>
-<li>
-<p><a title="https://amzn.to/3L6aKKC" href="https://amzn.to/3L6aKKC">Using this bag with the pump, I go about a week without having to water the plants:</a></p>
-<ul>
-<li>$15.24</li>
-</ul>
-</li>
-<li>
-<p><a title="https://amzn.to/47XQHaW" href="https://amzn.to/47XQHaW">This soil has all the nutrients you need so you don't absolutely need nutrients, but if you use the nutrients, they help make the buds ridiculously big:</a><br />
-<a title="https://amzn.to/3Z02tO2" href="https://amzn.to/3Z02tO2">These are the nutrients I am using.</a> I did a grow without them and one with and the difference was astounding. After the leaves come out I used grow big in the middle for pretty much all of it.</p>
-<ul>
-<li>$45.68</li>
-</ul>
-</li>
-<li>
-<p><a title="https://a.co/d/2HZfeGW" href="https://a.co/d/2HZfeGW">If you use shitty soil like I did at first, you may get big white spots on your leaves, this fixes it:</a></p>
-<ul>
-<li>$20.19</li>
-</ul>
-</li>
-<li>
-<p><a title="https://amzn.to/3sugSFZ" href="https://amzn.to/3sugSFZ">I used this tent, I can fit like 4-5 big 7 gallon plants in this one:</a></p>
-<ul>
-<li>$108.12</li>
-</ul>
-</li>
-<li>
-<p><a title="https://amzn.to/3P0RKym" href="https://amzn.to/3P0RKym">This is the light I use, it is really strong, and you can kinda see it peaking out the seams of the tent. I can't close the tent because it gets too hot out here.</a></p>
-<ul>
-<li>$139.99</li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Description</td>
+<td>Cost</td>
+<td>Link</td>
+</tr>
+<tr>
+<td>Automated Pump</td>
+<td>Decent pump I leave plugged in. I run it for 3 minutes everyday and that works pretty well</td>
+<td>$29.99</td>
+<td><a title="https://amzn.to/44y0Isx" href="https://amzn.to/44y0Isx">Amazon Link</a></td>
+</tr>
+<tr>
+<td>Water Bag</td>
+<td>Using this bag with the pump, I go about a week without having to water the plants:</td>
+<td>$15.24</td>
+<td><a title="https://amzn.to/3L6aKKC" href="https://amzn.to/3L6aKKC">Amazon Link</a></td>
+</tr>
+<tr>
+<td>Rogue Fuel</td>
+<td>This soil has all the nutrients you need so you don't absolutely need nutrients, but if you use the nutrients, they help make the buds ridiculously big.</td>
+<td>$45.68</td>
+<td><a title="https://amzn.to/47XQHaW" href="https://amzn.to/47XQHaW">Amazon Link</a></td>
+</tr>
+<tr>
+<td>Grow Big by Fox Farms</td>
+<td>These are the nutrients I am using. I did a grow without them and one with and the difference was astounding. After the leaves come out I used grow big in the middle for pretty much all of it.</td>
+<td>$41.99</td>
+<td><a title="https://amzn.to/3Z02tO2" href="https://amzn.to/3Z02tO2">Amazon Link</a></td>
+</tr>
+<tr>
+<td>Cal Mag</td>
+<td>If you use shitty soil like I did at first, you may get big white spots on your leaves, this fixes it:</td>
+<td>$20.19</td>
+<td><a title="https://a.co/d/2HZfeGW" href="https://a.co/d/2HZfeGW">Amazon Link</a></td>
+</tr>
+<tr>
+<td>Grow Tent</td>
+<td>I used this tent, I can fit like 4-5 big 7 gallon plants in this one:</td>
+<td>$108.12</td>
+<td><a title="https://amzn.to/3sugSFZ" href="https://amzn.to/3sugSFZ">Amazon Link</a></td>
+</tr>
+<tr>
+<td>Grow Light</td>
+<td>This is the light I use, it is really strong, and you can kinda see it peaking out the seams of the tent. I can't close the tent because it gets too hot out here.</td>
+<td>$139.99</td>
+<td><a title="https://amzn.to/3P0RKym" href="https://amzn.to/3P0RKym">Amazon Link</a></td>
+</tr>
+</tbody>
+</table>
+<p>Total Cost: $401.20</p>
 <p>I have a bunch of other stuff now, like thermometer, and shit, but I think everything else is extra, this is like the minimum I need to grow. Next I'm going to put a greenhouse on our land with AC to do a much bigger grow, but not just of cannabis, but food too. My ADHD super power is automation (or being lazy as shit lol) so I want to apply that to the greenhouse so we can still travel.</p>
+<p>I use the image below to get my language correct:</p>
+<p><img src="/_resources/12f634c484444e088fc4f0f8fc068abe.png" /></p>
 <p> </p>
 ]]></content:encoded>
         </item>
