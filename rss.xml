@@ -4,15 +4,14 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Tue, 26 Sep 2023 05:38:32 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Sep 2023 05:39:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
         <item>
             <title><![CDATA[About Djangelic]]></title>
             <guid>24333973665e4bb3a2ba2520a5b25684</guid>
             <pubDate>Tue, 26 Sep 2023 05:24:07 GMT</pubDate>
-            <content:encoded><![CDATA[<p><img src="/_resources/2ba2ffaed13543e393292283f2c3892e.png" /></p>
-<p> </p>
+            <content:encoded><![CDATA[<img src="/_resources/2ba2ffaed13543e393292283f2c3892e.png" alt="angel.png" width="179" height="179" class="jop-noMdConv" />
 <p>Passionate cybersecurity engineer with a knack for web design and automation flow management. Skilled in Python and JavaScript, I thrive in crafting secure and efficient solutions. When I'm not knee-deep in code, you'll find me exploring the world of 3D printing or diving into a good book.</p>
 ]]></content:encoded>
         </item>
