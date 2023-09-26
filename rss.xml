@@ -4,9 +4,16 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Tue, 26 Sep 2023 05:20:17 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Sep 2023 05:25:36 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[About Djangelic]]></title>
+            <guid>24333973665e4bb3a2ba2520a5b25684</guid>
+            <pubDate>Tue, 26 Sep 2023 05:24:07 GMT</pubDate>
+            <content:encoded><![CDATA[<p>Passionate cybersecurity engineer with a knack for web design and automation flow management. Skilled in Python and JavaScript, I thrive in crafting secure and efficient solutions. When I'm not knee-deep in code, you'll find me exploring the world of 3D printing or diving into a good book.</p>
+<img src="/_resources/340ee0a030ed4177b748226cc40f4e70.png" alt="ProfilePictureMaker.png" width="205" height="205" class="jop-noMdConv" />]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Got a Steam Deck!]]></title>
             <guid>0eda84c5d79647eb9f5b17b7d93933aa</guid>
