@@ -4,9 +4,84 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Mon, 02 Oct 2023 17:16:57 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Oct 2023 00:13:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[Three Entities in One Body]]></title>
+            <guid>54ab233f48a142b99ba875ec15bf12f0</guid>
+            <pubDate>Wed, 11 Oct 2023 20:01:25 GMT</pubDate>
+            <content:encoded><![CDATA[<h3 id="the-core-idea-three-entities-in-one-body">The Core Idea: Three Entities in One Body</h3>
+<p>Listening to "The Power of Now" and "Philosophize This" podcasts made me realize that humans are basically a mix of three entities: the mind, the emotions, and the "watcher" or core self. The idea is to align these three so your emotional and mental states don't run the show.</p>
+<h3 id="the-watcher-your-core-being">The Watcher: Your Core Being</h3>
+<p>To get control back, you have to become the 'watcher' of your emotions. This involves observing your feelings without judgment. Just being aware and 'watching' your emotions can help dissipate their intensity, letting the watcher take charge. The watcher is essentially your core self, and its default state is a mix of love and joy.</p>
+<h3 id="mind-vs-gut-tools-not-leaders">Mind vs. Gut: Tools, not Leaders</h3>
+<p>Your mind and gut feelings are not the essence of who you are; they are tools. Your gut is more aligned with your true self than your mind. But if you let your mind or emotions lead, you'll end up in chaos. This is even more true in the age of social media distractions.</p>
+<h3 id="the-danger-of-avoiding-pain">The Danger of Avoiding Pain</h3>
+<p>Often, we use our minds to create distractions that shield us from confronting our true feelings, especially painful ones. We mask pain with other emotions like anger. This is a form of self-protection, but it also prevents us from facing our actual feelings, like the pain of loneliness.</p>
+<h3 id="embrace-the-pain-live-in-the-now">Embrace the Pain: Live in the Now</h3>
+<p>"The Power of Now" suggests diving into your pain instead of avoiding it. By being still and observing your pain, you allow your mind to acknowledge it, which in turn allows your body to let it go. This is the essence of 'living in the now.'</p>
+<h3 id="the-benefits-clarity-and-control">The Benefits: Clarity and Control</h3>
+<p>By diving into the pain, you can then interact with others from a place of calm power. You're honest about your feelings, which avoids projecting your pain and anger onto others. This focus keeps you in control, leading to inner peace.</p>
+<h3 id="the-circle-of-control">The Circle of Control</h3>
+<p>The key to maintaining this peace is to focus only on what you can control. When you start worrying about things outside your control, anxiety creeps in. So, always consider whether something is within your 'circle of control' before reacting to it.</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Powershell Script to convert Multiple .MD files into .CSV]]></title>
+            <guid>fc3342d8869f4293a0cf793648e39e46</guid>
+            <pubDate>Sat, 23 Sep 2023 15:22:53 GMT</pubDate>
+            <content:encoded><![CDATA[<p>When I first started on my web design journey, I made a lot of bad decisions. Thankfully, the web design world is unforgiving, and taught me early. One of these bad decisions was keeping client data stored in evernote in plain text. Over the years, I migrated over to password managers, first Lastpass, then 1Password when Lastpass got hacked.</p>
+<p>While all my current clients were successfully migrated over, my old legacy notes still lived in Evernote. They no longer posed much of a threat, as the servers that the passwords belonged to were no longer active. As a digital data hoarder, I still didn't want to lose these data points, but I didn't have a good way to migrate them over.</p>
+<p>Evernote outputs to a proprietary file that Joplin supports thankfully, so for a while I kept them on my Joplin instance, but as someone that is trying to reduce noise, I wanted to get this out of my journal and put it someplace more secure.</p>
+<p>Enter ChatGPT and Powershell. I had chatgpt create a powershell script for me that took all the Markdown Files and converted them over to CSV file that I can then import into 1Password. I first created an Archive Vault for these so I also don't see them on the day to day, but can search against them if I need to.</p>
+<p>See below:</p>
+<div><pre class="hljs"><code><span class="hljs-comment"># Initialize an empty array to hold the data</span>
+<span class="hljs-variable">$csvData</span> = <span class="hljs-selector-tag">@</span>()
+
+<span class="hljs-comment"># Debug: Print the directory being scanned</span>
+<span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"Scanning directory: C:\Users\USER\OneDrive\Desktop\Old Business Notes"</span>
+
+<span class="hljs-comment"># Loop through each .md file in the folder</span>
+<span class="hljs-built_in">Get-ChildItem</span> <span class="hljs-literal">-Path</span> <span class="hljs-string">'C:\Users\USER\OneDrive\Desktop\Old Business Notes'</span> <span class="hljs-literal">-Filter</span> *.md | <span class="hljs-built_in">ForEach-Object</span> {
+    <span class="hljs-comment"># Debug: Print the name of the file being processed</span>
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"Processing file: <span class="hljs-variable">$</span>(<span class="hljs-variable">$_</span>.Name)"</span>
+
+    <span class="hljs-comment"># Read the file content</span>
+    <span class="hljs-variable">$fileContent</span> = <span class="hljs-built_in">Get-Content</span> <span class="hljs-variable">$_</span>.FullName <span class="hljs-literal">-Raw</span>
+    
+    <span class="hljs-comment"># Debug: Print the file content</span>
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"File Content: <span class="hljs-variable">$fileContent</span>"</span>
+
+    <span class="hljs-comment"># Separate the title and content</span>
+    <span class="hljs-variable">$lines</span> = <span class="hljs-variable">$fileContent</span> <span class="hljs-operator">-split</span> <span class="hljs-string">"\r?\n"</span>
+    <span class="hljs-variable">$title</span> = <span class="hljs-variable">$_</span>.BaseName  <span class="hljs-comment"># Using the filename without extension as the title</span>
+    <span class="hljs-variable">$content</span> = <span class="hljs-variable">$lines</span> <span class="hljs-operator">-join</span> <span class="hljs-string">"`r`n"</span>
+    
+    <span class="hljs-comment"># Create an object for this file</span>
+    <span class="hljs-variable">$obj</span> = [<span class="hljs-type">PSCustomObject</span>]<span class="hljs-selector-tag">@</span>{
+        <span class="hljs-string">"Title"</span> = <span class="hljs-variable">$title</span>
+        <span class="hljs-string">"Content"</span> = <span class="hljs-variable">$content</span>
+    }
+    
+    <span class="hljs-comment"># Add the object to the array</span>
+    <span class="hljs-variable">$csvData</span> += <span class="hljs-variable">$obj</span>
+}
+
+<span class="hljs-comment"># Debug: Print the CSV data to the console</span>
+<span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"CSV Data: <span class="hljs-variable">$csvData</span>"</span>
+
+<span class="hljs-comment"># Export the array to CSV</span>
+<span class="hljs-variable">$csvData</span> | <span class="hljs-built_in">Export-Csv</span> <span class="hljs-literal">-Path</span> <span class="hljs-string">'C:\Users\USER\OneDrive\Desktop\Old Business Notes\output.csv'</span> <span class="hljs-literal">-NoTypeInformation</span>
+
+<span class="hljs-comment"># Debug: Check if the file has been created</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-built_in">Test-Path</span> <span class="hljs-string">'C:\Users\USER\OneDrive\Desktop\Old Business Notes\output.csv'</span>) {
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"CSV file created successfully."</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"CSV file NOT created."</span>
+}</code></pre></div>
+]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[n8n Server Online Slack Notifier]]></title>
             <guid>610896e740744d4f81545dbaab3c77c8</guid>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-image: url(img/kratzer.png);
+        }
+        .article-content img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .article-content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media (max-width: 576px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    </style>
+    <title>Powershell Script to convert Multiple .MD files into .CSV - Nerdy thoughts of a Digital Jockey</title>
+<link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
+<body>
+
+<div class="container mt-4">
+
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <a href="/">Home</a> | 
+        <a href="/archives">Articles</a>
+    </nav>
+
+    <!-- Blog Title and Info -->
+    <div class="row justify-content-center">
+        <h1 class="article-title" style="text-align: center;">Powershell Script to convert Multiple .MD files into .CSV</h1>
+    </div>
+    <div class="row justify-content-center mt-2">
+        <div class="article-info">
+            <div>
+                <strong>Created At：</strong><time datetime="1695482573136">2023-09-23 08:22</time><br>
+                <strong>Updated At：</strong><time datetime="1696273059706">2023-10-02 11:57</time>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Blog Content -->
+    <div class="row mt-4">
+        <div class="col-lg-8 offset-lg-2 article-content markdown-body">
+          <p>When I first started on my web design journey, I made a lot of bad decisions. Thankfully, the web design world is unforgiving, and taught me early. One of these bad decisions was keeping client data stored in evernote in plain text. Over the years, I migrated over to password managers, first Lastpass, then 1Password when Lastpass got hacked.</p>
+<p>While all my current clients were successfully migrated over, my old legacy notes still lived in Evernote. They no longer posed much of a threat, as the servers that the passwords belonged to were no longer active. As a digital data hoarder, I still didn't want to lose these data points, but I didn't have a good way to migrate them over.</p>
+<p>Evernote outputs to a proprietary file that Joplin supports thankfully, so for a while I kept them on my Joplin instance, but as someone that is trying to reduce noise, I wanted to get this out of my journal and put it someplace more secure.</p>
+<p>Enter ChatGPT and Powershell. I had chatgpt create a powershell script for me that took all the Markdown Files and converted them over to CSV file that I can then import into 1Password. I first created an Archive Vault for these so I also don't see them on the day to day, but can search against them if I need to.</p>
+<p>See below:</p>
+<div><pre class="hljs"><code><span class="hljs-comment"># Initialize an empty array to hold the data</span>
+<span class="hljs-variable">$csvData</span> = <span class="hljs-selector-tag">@</span>()
+
+<span class="hljs-comment"># Debug: Print the directory being scanned</span>
+<span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"Scanning directory: C:\Users\USER\OneDrive\Desktop\Old Business Notes"</span>
+
+<span class="hljs-comment"># Loop through each .md file in the folder</span>
+<span class="hljs-built_in">Get-ChildItem</span> <span class="hljs-literal">-Path</span> <span class="hljs-string">'C:\Users\USER\OneDrive\Desktop\Old Business Notes'</span> <span class="hljs-literal">-Filter</span> *.md | <span class="hljs-built_in">ForEach-Object</span> {
+    <span class="hljs-comment"># Debug: Print the name of the file being processed</span>
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"Processing file: <span class="hljs-variable">$</span>(<span class="hljs-variable">$_</span>.Name)"</span>
+
+    <span class="hljs-comment"># Read the file content</span>
+    <span class="hljs-variable">$fileContent</span> = <span class="hljs-built_in">Get-Content</span> <span class="hljs-variable">$_</span>.FullName <span class="hljs-literal">-Raw</span>
+    
+    <span class="hljs-comment"># Debug: Print the file content</span>
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"File Content: <span class="hljs-variable">$fileContent</span>"</span>
+
+    <span class="hljs-comment"># Separate the title and content</span>
+    <span class="hljs-variable">$lines</span> = <span class="hljs-variable">$fileContent</span> <span class="hljs-operator">-split</span> <span class="hljs-string">"\r?\n"</span>
+    <span class="hljs-variable">$title</span> = <span class="hljs-variable">$_</span>.BaseName  <span class="hljs-comment"># Using the filename without extension as the title</span>
+    <span class="hljs-variable">$content</span> = <span class="hljs-variable">$lines</span> <span class="hljs-operator">-join</span> <span class="hljs-string">"`r`n"</span>
+    
+    <span class="hljs-comment"># Create an object for this file</span>
+    <span class="hljs-variable">$obj</span> = [<span class="hljs-type">PSCustomObject</span>]<span class="hljs-selector-tag">@</span>{
+        <span class="hljs-string">"Title"</span> = <span class="hljs-variable">$title</span>
+        <span class="hljs-string">"Content"</span> = <span class="hljs-variable">$content</span>
+    }
+    
+    <span class="hljs-comment"># Add the object to the array</span>
+    <span class="hljs-variable">$csvData</span> += <span class="hljs-variable">$obj</span>
+}
+
+<span class="hljs-comment"># Debug: Print the CSV data to the console</span>
+<span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"CSV Data: <span class="hljs-variable">$csvData</span>"</span>
+
+<span class="hljs-comment"># Export the array to CSV</span>
+<span class="hljs-variable">$csvData</span> | <span class="hljs-built_in">Export-Csv</span> <span class="hljs-literal">-Path</span> <span class="hljs-string">'C:\Users\USER\OneDrive\Desktop\Old Business Notes\output.csv'</span> <span class="hljs-literal">-NoTypeInformation</span>
+
+<span class="hljs-comment"># Debug: Check if the file has been created</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-built_in">Test-Path</span> <span class="hljs-string">'C:\Users\USER\OneDrive\Desktop\Old Business Notes\output.csv'</span>) {
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"CSV file created successfully."</span>
+} <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">Write-Host</span> <span class="hljs-string">"CSV file NOT created."</span>
+}</code></pre></div>
+
+        </div>
+    </div>
+
+    <!-- Return to Home Button -->
+    <div class="row justify-content-center mt-4">
+        <a href="/archives" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Back to Articles</a>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
