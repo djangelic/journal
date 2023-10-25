@@ -1,53 +1,61 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Subscribe To My Email Newsletter - Nerdy thoughts of a Digital Jockey</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    <nav class="navigation">
-      <a href="/">
-        Nerdy thoughts of a Digital Jockey
-      </a>
-    </nav>
-    <div class="about">Want to get emailed whenever a new blog post is released? Use the form below to sign up! Your email is securely added to my contacts, not some email tracking system.</div>
 
-    <!-- Adding the Contact Form -->
-    <form id="contact-form" class="form-signin">
-      <h1 class="h3 mb-3 font-weight-normal">Signup to My Newsletter!</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Subscribe To My Email Newsletter - Nerdy thoughts of a Digital Jockey
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-      <input type="text" id="name" name="name" class="form-control top" placeholder="Name" required autofocus>
-      <input type="email" id="email" name="email" class="form-control bottom" placeholder="Email" required>
+<body class="text-center">
+  <nav class="navigation">
+    <a href="/">
+      Nerdy thoughts of a Digital Jockey
+    </a>
+  </nav>
+  <div class="about">Want to get emailed whenever a new blog post is released? Use the form below to sign up! Your email is securely added to my contacts, not some email tracking system.</div>
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Me Up!</button>
-    </form>
-    <div id="form-response"></div> <!-- Element to display response -->
+  <!-- Adding the Contact Form -->
+  <form id="contact-form" class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Signup to My Newsletter!</h1>
 
-    <script>
-      const form = document.getElementById('contact-form');
-      const responseElement = document.getElementById('form-response');
-    
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        // Set the "Processing..." status
-        responseElement.textContent = 'Processing...';
+    <input type="text" id="name" name="name" class="form-control mx-auto" style="max-width: 600px;" placeholder="Name"
+      required autofocus>
+    <input type="email" id="email" name="email" class="form-control mx-auto" style="max-width: 600px;"
+      placeholder="Email" required>
 
-        const formData = new FormData(form);
-        const urlEncodedData = new URLSearchParams(formData).toString();
-        const url = 'https://script.google.com/macros/s/AKfycbzVTWtvZqRc_psT1Jt3MhvQj-YXtRAUD52aCWaONEdnj8AaRm0CQ1aLtjWPQn9659Hhdw/exec';
-    
-        fetch(url, {
-          method: 'POST',
-          mode: 'no-cors',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-          body: urlEncodedData,
-        })
+    <button class="btn btn-lg btn-primary btn-block mx-auto" style="max-width: 600px;" type="submit">Sign Me
+      Up!</button>
+  </form>
+
+  <div id="form-response"></div> <!-- Element to display response -->
+
+  <script>
+    const form = document.getElementById('contact-form');
+    const responseElement = document.getElementById('form-response');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Set the "Processing..." status
+      responseElement.textContent = 'Processing...';
+
+      const formData = new FormData(form);
+      const urlEncodedData = new URLSearchParams(formData).toString();
+      const url = 'https://script.google.com/macros/s/AKfycbzVTWtvZqRc_psT1Jt3MhvQj-YXtRAUD52aCWaONEdnj8AaRm0CQ1aLtjWPQn9659Hhdw/exec';
+
+      fetch(url, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: urlEncodedData,
+      })
         .then(response => {
           console.log('Form sent', response);
           responseElement.textContent = 'Successfully subscribed';
@@ -56,7 +64,8 @@
           console.error('Error sending form', error);
           responseElement.textContent = 'Error occurred';
         });
-      });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
