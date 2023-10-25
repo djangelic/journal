@@ -37,36 +37,36 @@
     <script>
       const form = document.getElementById('contact-form');
       const responseElement = document.getElementById('form-response');
-
-      form.addEventListener('submit', function (event) {
+    
+      form.addEventListener('submit', function(event) {
         event.preventDefault();
-
+    
         const formData = new FormData(form);
-        const data = {};
-        formData.forEach((value, key) => {
-          data[key] = value;
-        });
-
+    
+        // Convert FormData to URL-encoded form data
+        const urlEncodedData = new URLSearchParams(formData).toString();
+    
         const url = 'https://script.google.com/macros/s/AKfycbz5ew4mxtLpjYVA9rLMCkFeN14Tj_iYEZ4vyQqaMKMjx06u6aUcpOzzHhatWiRoeATn4g/exec';
-
+    
         fetch(url, {
           method: 'POST',
           mode: 'no-cors',
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
           },
-          body: JSON.stringify(data),
+          body: urlEncodedData, // Sending URL-encoded form data
         })
-          .then(response => {
-            console.log('Form sent', response);
-            responseElement.textContent = 'Successfully subscribed'; // Acknowledge submit
-          })
-          .catch(error => {
-            console.error('Error sending form', error);
-            responseElement.textContent = 'Error occurred'; // Show error
-          });
+        .then(response => {
+          console.log('Form sent', response);
+          responseElement.textContent = 'Successfully subscribed'; // Acknowledge submit
+        })
+        .catch(error => {
+          console.error('Error sending form', error);
+          responseElement.textContent = 'Error occurred'; // Show error
+        });
       });
     </script>
+    
 </body>
 
 </html>
