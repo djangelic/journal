@@ -25,12 +25,24 @@
     </div>
 
     <!-- JavaScript for Tag Page -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Decoding the tag from the URL query parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const tag = decodeURIComponent(urlParams.get('tag'));
+    <!-- Tag Articles List -->
+<div class="tag-articles-block">
+  <div class="annual-block mb-4">
+    <h2 id="tag-title"><!-- The tag title will be inserted here by JavaScript --></h2>
+    <ul class="list-unstyled" id="tag-articles-list">
+      <!-- Articles will be populated by JavaScript -->
+    </ul>
+  </div>
+</div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tag = decodeURIComponent(urlParams.get('tag'));
+
+    // Set the tag title
+    const tagTitle = document.getElementById('tag-title');
+    tagTitle.textContent = tag;
         // Define a function to safely retrieve articles data
         function getArticlesData() {
           const articlesDataElement = document.getElementById('articles-data');
