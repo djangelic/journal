@@ -40,7 +40,12 @@
       const urlParams = new URLSearchParams(window.location.search);
       const tag = decodeURIComponent(urlParams.get('tag'));
       console.log('Decoded tag:', tag);
-
+    
+      // Display the queried tag at the top of the list
+      const tagHeader = document.createElement('h2');
+      tagHeader.textContent = tag;
+      document.getElementById('tag-articles-block').appendChild(tagHeader);
+    
       function getArticlesData() {
         const rawData = document.getElementById('articles-data').textContent;
         try {
@@ -50,20 +55,22 @@
           return [];
         }
       }
-
+    
       const articlesData = getArticlesData();
       console.log('Articles data:', articlesData);
-
+    
       const articlesForTag = articlesData.filter(
         article => article.tags && article.tags.includes(tag)
       );
       console.log('Articles for tag:', articlesForTag);
-
+    
       const articlesBlock = document.getElementById('tag-articles-block');
       if (articlesForTag.length > 0) {
         articlesForTag.forEach(article => {
           const articleElement = document.createElement('div');
+          const formattedDate = moment(article.createdAt).format('MM-DD-YYYY');
           articleElement.innerHTML = `
+            <time datetime="${article.createdAt}" class="mr-2 text-muted">${formattedDate}</time>
             <h2><a href="/${article.fullUrl}">${article.title}</a></h2>
             <p>${article.meta.description || ''}</p>
           `;
@@ -73,6 +80,6 @@
         articlesBlock.innerHTML = '<p>No articles found for this tag.</p>';
       }
     });
-  </script>
+    </script>    
 </body>
 </html>
