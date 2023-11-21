@@ -111,7 +111,7 @@
       const articleContent = document.querySelector('.article-content');
       articleContent.innerHTML = articleContent.innerHTML.replace(
         /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>'
+        '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
       );
     });
   </script>  
