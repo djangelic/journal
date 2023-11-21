@@ -4,9 +4,15 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Tue, 21 Nov 2023 21:33:15 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 21 Nov 2023 21:39:53 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
+        <item>
+            <title><![CDATA[test youtube note]]></title>
+            <guid>50dd1d5d5c464a0f866264e5d2d14a0d</guid>
+            <pubDate>Tue, 21 Nov 2023 21:39:35 GMT</pubDate>
+            <content:encoded><![CDATA[<a title="https://www.youtube.com/watch?v=sJud-MPUJgo" href="https://www.youtube.com/watch?v=sJud-MPUJgo">https://www.youtube.com/watch?v=sJud-MPUJgo</a>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[I have found my Truth]]></title>
             <guid>54ab233f48a142b99ba875ec15bf12f0</guid>
