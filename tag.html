@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <link rel="stylesheet" href="/_assets/main.css" />
 
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Tags - Nerdy thoughts of a Digital Jockey
-    </title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Tags - Nerdy thoughts of a Digital Jockey</title>
 </head>
-
 <body>
   <div class="container mt-4">
     <!-- Navigation Bar -->
     <nav class="navigation mb-4">
-      <a href="/">
-        Nerdy thoughts of a Digital Jockey
-      </a>
+      <a href="/">Nerdy thoughts of a Digital Jockey</a>
     </nav>
 
     <!-- Hidden Element for Articles Data -->
@@ -36,63 +30,57 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <!-- Script for Filtering Articles Based on Tag Query Parameter -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const urlParams = new URLSearchParams(window.location.search);
-      const tag = decodeURIComponent(urlParams.get('tag')).toLowerCase();
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const tag = decodeURIComponent(urlParams.get('tag'));
+  console.log('Decoded tag:', tag);
 
-      // Create and display the queried tag at the top
-      const tagTitleBlock = document.getElementById('tag-title-block');
-      const tagHeader = document.createElement('h2');
-      tagHeader.textContent = tag;
-      tagTitleBlock.appendChild(tagHeader);
+  // Display the queried tag at the top of the list
+  const tagHeader = document.createElement('h2');
+  tagHeader.textContent = tag;
+  document.getElementById('tag-articles-block').appendChild(tagHeader);
 
-      function getArticlesData() {
-        const rawData = document.getElementById('articles-data').textContent;
-        try {
-          return JSON.parse(rawData);
-        } catch (e) {
-          console.error('Error parsing articles data:', e);
-          return [];
-        }
-      }
+  function getArticlesData() {
+    const rawData = document.getElementById('articles-data').textContent;
+    try {
+      return JSON.parse(rawData);
+    } catch (e) {
+      console.error('Error parsing articles data:', e);
+      return [];
+    }
+  }
 
-      const articlesData = getArticlesData();
+  const articlesData = getArticlesData();
+  console.log('Articles data:', articlesData);
 
-      const articlesForTag = articlesData.filter(
-        article => article.tags && article.tags.map(t => t.toLowerCase()).includes(tag)
-      );
+  const articlesForTag = articlesData.filter(
+    article => article.tags && article.tags.includes(tag)
+  );
+  console.log('Articles for tag:', articlesForTag);
 
-      const articlesBlock = document.getElementById('tag-articles-block');
-      if (articlesForTag.length > 0) {
-        articlesForTag.forEach(article => {
-          const articleElement = document.createElement('div');
-          const formattedDate = moment(article.createdAt).format('MM-DD-YYYY');
-          articleElement.innerHTML = `
+  const articlesBlock = document.getElementById('tag-articles-block');
+  if (articlesForTag.length > 0) {
+    articlesForTag.forEach(article => {
+      const articleElement = document.createElement('div');
+      const formattedDate = moment(article.createdAt).format('MM-DD-YYYY');
+      articleElement.innerHTML = `
         <time datetime="${article.createdAt}" class="mr-2 text-muted">${formattedDate}</time>
         <h2><a href="/${article.fullUrl}">${article.title}</a></h2>
         <p>${article.meta.description || ''}</p>
       `;
-          articlesBlock.appendChild(articleElement);
-        });
-      } else {
-        articlesBlock.innerHTML = '<p>No articles found for this tag.</p>';
-      }
+      articlesBlock.appendChild(articleElement);
     });
-
-  </script>
+  } else {
+    articlesBlock.innerHTML = '<p>No articles found for this tag.</p>';
+  }
+});
+</script>
 
 </body>
-
 </html>
