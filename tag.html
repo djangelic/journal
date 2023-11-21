@@ -30,11 +30,19 @@
       const urlParams = new URLSearchParams(window.location.search);
       const tag = decodeURIComponent(urlParams.get('tag'));
 
-      // Define a function to safely retrieve articles data
-      function getArticlesData() {
+      // Define a function to safely retrieve and clean articles data
+      function getCleanedArticlesData() {
         const rawData = document.getElementById('articles-data').textContent;
         try {
-          return JSON.parse(rawData);
+          let articlesData = JSON.parse(rawData);
+          // Regular expression to match image URLs and other URLs
+          const urlRegex = /<img[^>]*src="[^"]*"[^>]*>|<a[^>]*href="[^"]*"[^>]*>.*?<\/a>/gi;
+          // Remove the matched URLs from the content
+          articlesData = articlesData.map(article => {
+            article.content = article.content.replace(urlRegex, '');
+            return article;
+          });
+          return articlesData;
         } catch (e) {
           console.error('Error parsing articles data:', e);
           return [];
@@ -42,7 +50,7 @@
       }
 
       // Retrieve and parse articles data
-      const articlesData = getArticlesData();
+      const articlesData = getCleanedArticlesData();
 
       // Filtering articles based on the decoded tag
       const articlesForTag = articlesData.filter(
@@ -56,11 +64,11 @@
           const articleElement = document.createElement('div');
           articleElement.classList.add('tag-article-item');
           articleElement.innerHTML = `
-          <time datetime="${new Date(article.createdAt).toISOString()}" class="mr-2 text-muted">
-            ${new Date(article.createdAt).toLocaleDateString()} <!-- Format date as needed -->
-          </time>
-          <a href="/${article.fullUrl}">${article.title}</a>
-        `;
+            <time datetime="${new Date(article.createdAt).toISOString()}" class="mr-2 text-muted">
+              ${new Date(article.createdAt).toLocaleDateString()} <!-- Format date as needed -->
+            </time>
+            <a href="/${article.fullUrl}">${article.title}</a>
+          `;
           articlesBlock.appendChild(articleElement);
         });
       } else {
@@ -68,9 +76,6 @@
       }
     });
   </script>
-
-
-
 
 </body>
 
