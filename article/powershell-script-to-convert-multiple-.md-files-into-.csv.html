@@ -35,6 +35,11 @@
         }
     </style>
     <title>Powershell Script to convert Multiple .MD files into .CSV - Nerdy thoughts of a Digital Jockey</title>
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Powershell Script to convert Multiple .MD files into .CSV" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="powershell-script-to-convert-multiple-.md-files-into-.csv" />
 <link rel="stylesheet" href="/_markdown_plugin_assets/highlight.js/atom-one-light.css" /></head>
 <body>
 
@@ -140,8 +145,6 @@
     <!-- Return to Home Button -->
     <div class="row justify-content-center mt-4">
         <a href="/archives" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Back to Articles</a>
-    </div>
-    <div class="row justify-content-center mt-4">
         <a href="/subscribe" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Subscribe by Email</a>
     </div>
 </div>
@@ -151,5 +154,14 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const articleContent = document.querySelector('.article-content');
+        articleContent.innerHTML = articleContent.innerHTML.replace(
+            /https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/g,
+            '<iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>'
+        );
+    });
+</script>
 </body>
 </html>
