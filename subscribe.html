@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
+  <!-- Analytics Tracking Code Section -->
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Subscribe To My Email Newsletter - Nerdy thoughts of a Digital Jockey
   </title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 
@@ -17,16 +18,17 @@
       <p>Nerdy thoughts of a Digital Jockey</p>
     </a>
   </nav>
-  <div class="about"><p>Want to get notified whenever a new blog post is released? Use the form below to sign up for email alerts!</p></div>
+  <div class="about">
+    <p>Want to get notified whenever a new blog post is released? Use the form below to sign up for email alerts!</p>
+  </div>
 
   <!-- Adding the Contact Form -->
-  <form id="contact-form" class="form-signin mt-5"> <!-- Added margin-top to the form -->
+  <form id="contact-form" class="form-signin mt-5">
+    <!-- Added margin-top to the form -->
     <h1 class="h3 mb-3 font-weight-normal">Sign Up For My Newsletter!</h1>
 
-    <input type="text" id="name" name="name" class="form-control mx-auto mb-3" style="max-width: 600px;"
-      placeholder="Name" required autofocus> <!-- Added margin-bottom to the input -->
-    <input type="email" id="email" name="email" class="form-control mx-auto mb-3" style="max-width: 600px;"
-      placeholder="Email" required> <!-- Added margin-bottom to the input -->
+    <input type="text" id="name" name="name" class="form-control mx-auto mb-3" style="max-width: 600px;" placeholder="Name" required autofocus> <!-- Added margin-bottom to the input -->
+    <input type="email" id="email" name="email" class="form-control mx-auto mb-3" style="max-width: 600px;" placeholder="Email" required> <!-- Added margin-bottom to the input -->
 
     <button class="btn btn-lg btn-primary btn-block mx-auto mt-3" style="max-width: 600px;" type="submit">Sign Me
       Up!</button> <!-- Added margin-top to the button -->
@@ -38,7 +40,7 @@
     const form = document.getElementById('contact-form');
     const responseElement = document.getElementById('form-response');
 
-    form.addEventListener('submit', function (event) {
+    form.addEventListener('submit', function(event) {
       event.preventDefault();
 
       // Set the "Processing..." status
@@ -49,13 +51,13 @@
       const url = 'https://script.google.com/macros/s/AKfycbzVTWtvZqRc_psT1Jt3MhvQj-YXtRAUD52aCWaONEdnj8AaRm0CQ1aLtjWPQn9659Hhdw/exec';
 
       fetch(url, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: urlEncodedData,
-      })
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: urlEncodedData,
+        })
         .then(response => {
           console.log('Form sent', response);
           responseElement.textContent = 'Successfully subscribed';

@@ -2,53 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <link rel="stylesheet" href="/_assets/main.css" />
 
-        <meta content="IE=edge" http-equiv="X-UA-Compatible">
-        <meta content="width=device-width, initial-scale=1" name="viewport">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
-        <style type="text/css">
-            body {
-                font-family: 'Open Sans', sans-serif;
-                background-image: url(img/kratzer.png);
-            }
+  <!-- Analytics Tracking Code Section -->
+  
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
+  <style type="text/css">
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-image: url(https://djangelic.com/_resources/e68fa799d6e440b2956c3f684767e2fe.png);
+    }
 
-            .article-content img {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
+    .article-content img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-            .article-content {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
+    .article-content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
-            @media (max-width: 576px) {
-                .container {
-                    padding-left: 15px;
-                    padding-right: 15px;
-                }
-            }
-        </style>
-        <title>
-            n8n Server Online Slack Notifier - Nerdy thoughts of a Digital Jockey
-        </title>
-        
-            <!-- Open Graph Metadata -->
-            <meta property="og:title" content="n8n Server Online Slack Notifier" />
-            <meta property="og:type" content="website" />
-            <meta property="og:image" content="https://djangelic.com/png&#34; data-coda-size=&#34;129826&#34; alt=&#34;image.png" />
-            <meta property="og:url" content="https://djangelic.com/article/n8n-server-online-slack-notifier" />
-            <meta property="og:description" content="This automation posts when the n8n server comes online. It also gets the amount of storage used so far and the n8n version that is currently running and adds it to the slack notification.
+    @media (max-width: 576px) {
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  </style>
+  <title>
+    n8n Server Online Slack Notifier - Nerdy thoughts of a Digital Jockey
+  </title>
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="n8n Server Online Slack Notifier" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://djangelic.com/png&#34; data-coda-size=&#34;129826&#34; alt=&#34;image.png" />
+  <meta property="og:url" content="https://djangelic.com/article/n8n-server-online-slack-notifier" />
+  <meta property="og:description" content="This automation posts when the n8n server comes online. It also gets the amount of storage used so far and the n8n version that is currently running and adds it to the slack notification.
 
 {
   &#34;meta&#34;:" />
@@ -56,47 +57,47 @@
 
 <body>
 
-    <div class="container mt-4">
+  <div class="container mt-4">
 
-        <!-- Navigation Bar -->
-        <nav class="navigation">
-            <a href="/">Home</a> |
-            <a href="/archives">Articles</a>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+      <a href="/">Home</a> |
+      <a href="/archives">Articles</a>
+    </nav>
 
-        <!-- Blog Title and Info -->
-        <div class="row justify-content-center">
-            <h1 class="article-title" style="text-align: center;">
-                n8n Server Online Slack Notifier
-            </h1>
+    <!-- Blog Title and Info -->
+    <div class="row justify-content-center">
+      <h1 class="article-title" style="text-align: center;">
+        n8n Server Online Slack Notifier
+      </h1>
+    </div>
+    <div class="row justify-content-center mt-2">
+      <div class="article-info">
+        <div>
+          <strong>Created At：</strong><time datetime="1695149313337">
+            2023-09-19 11:48
+          </time><br>
+          <strong>Updated At：</strong><time datetime="1695149336469">
+            2023-09-19 11:48
+          </time>
         </div>
-        <div class="row justify-content-center mt-2">
-            <div class="article-info">
-                <div>
-                    <strong>Created At：</strong><time datetime="1695149313337">
-                        2023-09-19 11:48
-                    </time><br>
-                    <strong>Updated At：</strong><time datetime="1695149336469">
-                        2023-09-19 11:48
-                    </time>
-                </div>
-                
-                    <div>
-                        <strong>Tags: </strong>
-                        
-                            <a href="/tag?tag=code%20-%20n8n" class="keyword badge badge-info">
-                                code - n8n
-                            </a>
-                            
-                    </div>
-                    
-            </div>
+        
+        <div>
+          <strong>Tags: </strong>
+          
+          <a href="/tag?tag=code%20-%20n8n" class="keyword badge badge-info">
+            code - n8n
+          </a>
+          
         </div>
+        
+      </div>
+    </div>
 
-        <!-- Blog Content -->
-        <div class="row mt-4">
-            <div class="col-lg-8 offset-lg-2 article-content markdown-body">
-                <p>This automation posts when the n8n server comes online. It also gets the amount of storage used so far and the n8n version that is currently running and adds it to the slack notification.</p>
+    <!-- Blog Content -->
+    <div class="row mt-4">
+      <div class="col-lg-8 offset-lg-2 article-content markdown-body">
+        <p>This automation posts when the n8n server comes online. It also gets the amount of storage used so far and the n8n version that is currently running and adds it to the slack notification.</p>
 <img loading="lazy" data-coda-env="prod" data-coda-doc-id="PPI3Vw69xh" data-coda-blob-id="bl-M6pEnWc9JB" data-coda-blob-hash="9197bb67b41f7fa39defd0c8435cc0ead80b5dd19c3aafed6bf3f1fb561b6ffcaaa76919beac61a15b826910893ce6a0159cf430685c3c4a1960030e088be760c1702b7c92750447a68931ca8adf10edcf235442cc66bca8f38c9d3ce5d6eab77b7731eb" data-coda-mime-type="image/png" data-coda-size="129826" alt="image.png" src="/_resources/76e3cb395f4b4c3690a09bac47345a76.png" height="619" width="1595" class="jop-noMdConv" />
 <div><pre class="hljs"><code><span class="hljs-punctuation">{</span>
   <span class="hljs-attr">"meta"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
@@ -415,13 +416,13 @@
   <span class="hljs-punctuation">}</span>
 <span class="hljs-punctuation">}</span></code></pre></div>
 
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <!-- Giscus Comments Section -->
-        
-            <div id="comments">
-                <script src="https://giscus.app/client.js"
+    <!-- Giscus Comments Section -->
+    
+    <div id="comments">
+      <script src="https://giscus.app/client.js"
         data-repo="djangelic/journal"
         data-repo-id="R_kgDOKM-pXA"
         data-category="Announcements"
@@ -436,38 +437,32 @@
         crossorigin="anonymous"
         async>
 </script>
-            </div>
-            
-
-                <!-- Return to Home Button -->
-                <div class="row justify-content-center mt-4">
-                    <a href="/archives" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Back to
-                        Articles</a>
-                    <a href="/subscribe" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Subscribe by
-                        Email</a>
-                </div>
     </div>
+    
+
+    <!-- Return to Home Button -->
+    <div class="row justify-content-center mt-4">
+      <a href="/archives" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Back to
+        Articles</a>
+      <a href="/subscribe" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Subscribe by
+        Email</a>
+    </div>
+  </div>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const articleContent = document.querySelector('.article-content');
-            articleContent.innerHTML = articleContent.innerHTML.replace(
-                /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
-                '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
-            );
-        });
-    </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const articleContent = document.querySelector('.article-content');
+      articleContent.innerHTML = articleContent.innerHTML.replace(
+        /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
+        '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
+      );
+    });
+  </script>
 </body>
 
 </html>
