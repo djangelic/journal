@@ -2,70 +2,77 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Subscribe To My Email Newsletter - Nerdy thoughts of a Digital Jockey
-  </title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" href="/_assets/main.css" />
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        font-family: 'Open Sans', sans-serif;
+        color: #7A8B8B !important;
+        background-color: white !important;
+        background-image: url(https://djangelic.com/_resources/e68fa799d6e440b2956c3f684767e2fe.png) !important;
+      }
+
+      img {
+        width: 96px !important;
+        height: 96px !important;
+      }
+
+      img.rounded-circle.img-thumbnail.border {
+        background-color: transparent !important;
+      }
+    </style>
+    <title>
+      Nerdy thoughts of a Digital Jockey
+    </title>
 </head>
 
 <body class="text-center">
   <nav class="navigation">
     <a href="/">
-      <p>Nerdy thoughts of a Digital Jockey</p>
+      <p>
+        Nerdy thoughts of a Digital Jockey
+      </p>
     </a>
   </nav>
-  <div class="about"><p>Want to get notified whenever a new blog post is released? Use the form below to sign up for email alerts!</p></div>
+  <div class="container">
+    <div class="row justify-content-center mt-4">
+      <!-- ((2)) - Put your image / icon here -->
+      <img src="default.png" alt="Main Image"
+        style="margin-bottom: -10px; height:96px; width:96px;">
+    </div>
+    <div class="row justify-content-center mt-3 mb-1">
+      <!-- Main Title -->
+      <h1 style="color:#17a2b8;">
+        Angel M
+      </h1>
+    </div>
+    <div class="row justify-content-center mt-1 mb-3">
+      <!-- Subtitle -->
+      <center>
+        <h6 style="color:#7A8B8B;">
+          Nerdy By Nature
+        </h6>
+      </center>
+    </div>
 
-  <!-- Adding the Contact Form -->
-  <form id="contact-form" class="form-signin mt-5"> <!-- Added margin-top to the form -->
-    <h1 class="h3 mb-3 font-weight-normal">Sign Up For My Newsletter!</h1>
+  </div>
 
-    <input type="text" id="name" name="name" class="form-control mx-auto mb-3" style="max-width: 600px;"
-      placeholder="Name" required autofocus> <!-- Added margin-bottom to the input -->
-    <input type="email" id="email" name="email" class="form-control mx-auto mb-3" style="max-width: 600px;"
-      placeholder="Email" required> <!-- Added margin-bottom to the input -->
 
-    <button class="btn btn-lg btn-primary btn-block mx-auto mt-3" style="max-width: 600px;" type="submit">Sign Me
-      Up!</button> <!-- Added margin-top to the button -->
-  </form>
 
-  <div id="form-response"></div> <!-- Element to display response -->
+  <div class="about">
+    <p>Passionate cybersecurity engineer with a knack for web design and automation flow management. Skilled in Python and JavaScript, I thrive in crafting secure and efficient solutions. When I'm not knee-deep in code, you'll find me exploring the world of 3D printing or diving into a good book.</p>
+  </div>
 
-  <script>
-    const form = document.getElementById('contact-form');
-    const responseElement = document.getElementById('form-response');
 
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
 
-      // Set the "Processing..." status
-      responseElement.textContent = 'Processing...';
-
-      const formData = new FormData(form);
-      const urlEncodedData = new URLSearchParams(formData).toString();
-      const url = 'https://script.google.com/macros/s/AKfycbzVTWtvZqRc_psT1Jt3MhvQj-YXtRAUD52aCWaONEdnj8AaRm0CQ1aLtjWPQn9659Hhdw/exec';
-
-      fetch(url, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: urlEncodedData,
-      })
-        .then(response => {
-          console.log('Form sent', response);
-          responseElement.textContent = 'Successfully subscribed';
-        })
-        .catch(error => {
-          console.error('Error sending form', error);
-          responseElement.textContent = 'Error occurred';
-        });
-    });
-  </script>
 </body>
 
 </html>
