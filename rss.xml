@@ -4,7 +4,7 @@
         <title></title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Sat, 02 Dec 2023 17:31:43 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 Dec 2023 07:17:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Joplin Pages Publisher</generator>
         <item>
@@ -314,7 +314,7 @@
         <span class="hljs-attr">"channel"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"alerts-n8n"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"text"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"=n8n.aztechsol.com is now online.\nN8n is on version `{{$node[\"Get n8n Version\"].json[\"data\"][\"versionCli\"]}}`\n`{{$json[\"stdout\"]}}` of Hard Disk Used"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"otherOptions"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-          <span class="hljs-attr">"unfurl_links"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
+          <span class="hljs-attr">"unfurl_links"</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span>
         <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"attachments"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
           <span class="hljs-punctuation">{</span>
@@ -345,7 +345,7 @@
         <span class="hljs-attr">"channel"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"alerts-n8n"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"text"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"=n8n.aztechsol.com is now online.\nN8n is on version `{{$node[\"Get n8n Version\"].json[\"data\"][\"versionCli\"]}}`\n`{{$json[\"stdout\"]}}` of Hard Disk Used"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"otherOptions"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-          <span class="hljs-attr">"unfurl_links"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
+          <span class="hljs-attr">"unfurl_links"</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span>
         <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"attachments"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
           <span class="hljs-punctuation">{</span>
@@ -376,7 +376,7 @@
         <span class="hljs-attr">"channel"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"alerts-n8n"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"text"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"=n8n.aztechsol.com is now online.\nN8n is on version `{{$node[\"Get n8n Version\"].json[\"data\"][\"versionCli\"]}}`\n`{{$json[\"stdout\"]}}` of Hard Disk Used"</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"otherOptions"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-          <span class="hljs-attr">"unfurl_links"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span>
+          <span class="hljs-attr">"unfurl_links"</span><span class="hljs-punctuation">:</span> <span class="hljs-keyword">true</span>
         <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
         <span class="hljs-attr">"attachments"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
           <span class="hljs-punctuation">{</span>
