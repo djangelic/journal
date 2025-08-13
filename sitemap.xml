@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://djangelic.com/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
+<loc>https://djangelic.com/</loc>
+</url>
+<url>
+<loc>https://djangelic.com/berlin-germany.html</loc>
+<lastmod>2025-08-12T23:35:29-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7503.jpeg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7511.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7512.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7632.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7531.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7822-1-2.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7636.png</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7656.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7658.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7823.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7678.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7815.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7687.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7685.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7697.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7693.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7694.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7695.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7703.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7720.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7729.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7730.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7731.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7732.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7733.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7738.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7744.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7749.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7755.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7756.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7758.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7760.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/27/IMG_7821.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/beyond-the-skies-exploring-the-world-through-a-flight-attendants-lens.html</loc>
+<lastmod>2025-08-12T22:39:43-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/flight-diverted-due-to-turbulence-and-storm.html</loc>
+<lastmod>2025-08-12T22:29:44-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/forged-in-fire.html</loc>
+<lastmod>2025-07-28T23:34:03-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/8/ChatGPT-Image-Jul-28-2025-11_33_46-PM.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/i-have-found-my-truth.html</loc>
+<lastmod>2025-08-12T22:48:12-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/26/43e80736da50493b94010c329ea00d7b.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/manhattan-beach-california-first-trip-as-flight-attendant.html</loc>
+<lastmod>2025-08-12T22:22:53-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/13/22a2a4ae14e946b4aa043c6fdc6ee08d.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/13/07078d80f59f462090f2221feaa9f16b.png</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/13/5dfebb20844f4dd6a3705631f4bad65a.gif</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/13/641bfecc94e04bf7a3587a085edddff6.png</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/13/8d00da0362ff427091281ad2830589bf.png</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/medical-emergency-onboard-our-flight.html</loc>
+<lastmod>2025-08-12T22:34:05-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/my-path-to-flight-attendant.html</loc>
+<lastmod>2025-08-12T22:19:27-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/12/341ea70d9a394fc98b3724bdfdc9e41e.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/my-thoughts-on-religion-and-faith.html</loc>
+<lastmod>2025-08-12T22:39:35-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/21/973d5232918a428ab6ad9181c4ad9ff8.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/n8n-server-online-slack-notifier-2.html</loc>
+<lastmod>2025-08-12T22:43:29-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/24/76e3cb395f4b4c3690a09bac47345a76.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/navigating-turbulence-and-tension.html</loc>
+<lastmod>2025-08-12T22:28:53-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/new-york-in-august-work-bagels-and-a-bit-of-adventure.html</loc>
+<lastmod>2025-08-12T23:28:17-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/PXL_20250808_170042959.jpeg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1390.JPG</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1500.JPG</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1437.JPG</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1502.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1469.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1427.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/PXL_20250808_170042959.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/PXL_20250808_163855281.MP.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/PXL_20250808_195920575.MP.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/PXL_20250808_195324579.MP.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/11/IMG_1451.jpg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/no-drink-service-on-flight.html</loc>
+<lastmod>2025-08-12T22:27:06-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/passenger-lavatory-disagreement.html</loc>
+<lastmod>2025-08-12T22:35:18-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/powershell-script-to-convert-multiple-md-files-into-csv.html</loc>
+<lastmod>2025-08-12T22:59:11-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/the-forge-and-the-hollow-house.html</loc>
+<lastmod>2025-07-28T23:30:50-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/7/IMG_6793.jpeg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/the-forge.html</loc>
+<lastmod>2025-07-28T23:21:10-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/4/DALLE-2025-07-28-23.19.27-A-powerful-blacksmith-forging-a-glowing-molten-sword-on-an-anvil-in-the-middle-of-a-roaring-fire.jpg</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/the-king-returns.html</loc>
+<lastmod>2025-07-28T23:29:34-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/6/image-2.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/the-nest.html</loc>
+<lastmod>2025-07-28T23:09:14-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/2/IMG_6706.jpeg</image:loc>
+<image:title><![CDATA[A bird flying to it's nest]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/2/IMG_6707.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/2/IMG_6708.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/2/IMG_6709.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/2/IMG_6710.jpeg</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/2/thenest.png</image:loc>
+<image:title><![CDATA[Image description]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/the-storm.html</loc>
+<lastmod>2025-08-12T23:37:38-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/5/ChatGPT-Image-Jul-28-2025-11_30_41-PM.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/the-warrior-awakens.html</loc>
+<lastmod>2025-07-28T23:12:29-07:00</lastmod>
+<image:image>
+<image:loc>https://djangelic.com/media/posts/3/imagewarrior.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+</url>
+<url>
+<loc>https://djangelic.com/thoughts-on-laziness.html</loc>
+<lastmod>2025-08-12T22:39:27-07:00</lastmod>
+</url>
+<url>
+<loc>https://djangelic.com/unruly-flight-attendant-removed-from-flight.html</loc>
+<lastmod>2025-08-12T22:36:05-07:00</lastmod>
+</url>
+</urlset>
