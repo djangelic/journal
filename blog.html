@@ -73,56 +73,184 @@
 .blog-post-tag:hover {
    background: #e0e0e0;
 }</style><script>document.addEventListener('DOMContentLoaded', function() {
-   // Fetch the RSS feed to get blog posts
-   fetch('https://djangelic.com//feed.xml')
-      .then(response => response.text())
-      .then(data => {
-         const parser = new DOMParser();
-         const xmlDoc = parser.parseFromString(data, 'text/xml');
-         const items = xmlDoc.querySelectorAll('item');
-         
-         const container = document.getElementById('blog-posts-container');
-         container.innerHTML = '';
-         
-         items.forEach(item => {
-            const title = item.querySelector('title')?.textContent || '';
-            const link = item.querySelector('link')?.textContent || '';
-            const description = item.querySelector('description')?.textContent || '';
-            const pubDate = item.querySelector('pubDate')?.textContent || '';
-            const author = item.querySelector('dc\\:creator')?.textContent || item.querySelector('author')?.textContent || '';
-            
-            // Create post element
-            const postElement = document.createElement('article');
-            postElement.className = 'blog-post';
-            
-            // Format date
-            const date = new Date(pubDate);
-            const formattedDate = date.toLocaleDateString('en-US', {
-               year: 'numeric',
-               month: 'long',
-               day: 'numeric'
-            });
-            
-            // Create post HTML
-            postElement.innerHTML = `
-               <h2><a href="${link}">${title}</a></h2>
-               <div class="blog-post-meta">
-                  ${author ? `<span>By ${author}</span> • ` : ''}
-                  <time>${formattedDate}</time>
-               </div>
-               <div class="blog-post-excerpt">${description}</div>
-            `;
-            
-            container.appendChild(postElement);
-         });
-         
-         if (items.length === 0) {
-            container.innerHTML = '<p>No posts found.</p>';
-         }
-      })
-      .catch(error => {
-         console.error('Error fetching posts:', error);
-         document.getElementById('blog-posts-container').innerHTML = 
-            '<p>Unable to load posts. <a href="https://djangelic.com/">Visit the main site</a> to view all posts.</p>';
-      });
+   const container = document.getElementById('blog-posts-container');
+   
+   // Check if we're in local preview (file:// URLs)
+   const isLocalPreview = window.location.protocol === 'file:';
+   
+   if (isLocalPreview) {
+      // Show message for local preview
+      container.innerHTML = `
+         <div style="text-align: center; padding: 2rem;">
+            <h3>📝 Blog Posts Preview</h3>
+            <p>You're viewing this page in local preview mode.</p>
+            <p>RSS feeds cannot be loaded from local files due to browser security restrictions.</p>
+            <div style="margin: 2rem 0;">
+               <h4>To test the blog functionality:</h4>
+               <ol style="text-align: left; max-width: 500px; margin: 1rem auto;">
+                  <li>Deploy your site to your hosting provider</li>
+                  <li>Visit the live blog page URL</li>
+                  <li>The RSS feed will load automatically</li>
+               </ol>
+             </div>
+             <p><strong>Expected RSS feed URL:</strong> <code>https://djangelic.com//feed.xml</code></p>
+             <div style="margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
+                <p><strong>Note:</strong> This template will work perfectly on your live site!</p>
+             </div>
+          </div>
+       `;
+       return;
+    }
+    
+    // Try multiple RSS feed URLs (only for live sites)
+    const feedUrls = [
+       'https://djangelic.com//feed.xml',
+       'https://djangelic.com//rss.xml',
+       'https://djangelic.com//atom.xml',
+       'https://djangelic.com//feed/'
+    ];
+    
+    function tryFetchFeed(urlIndex = 0) {
+       if (urlIndex >= feedUrls.length) {
+          // All URLs failed, show error with debug info
+          container.innerHTML = `
+             <div style="text-align: center; padding: 2rem;">
+                <h3>🔍 RSS Feed Debug Info</h3>
+                <p>Unable to load posts from RSS feed.</p>
+                <div style="text-align: left; max-width: 600px; margin: 1rem auto; background: #f5f5f5; padding: 1rem; border-radius: 8px;">
+                   <h4>Tried these URLs:</h4>
+                   <ul>
+                      ${feedUrls.map(url => `<li><code>${url}</code></li>`).join('')}
+                   </ul>
+                   <h4>Possible issues:</h4>
+                   <ul>
+                      <li>No blog posts exist yet</li>
+                      <li>RSS feed is not enabled in Publii settings</li>
+                      <li>Site is still building</li>
+                      <li>Posts are in draft status</li>
+                   </ul>
+                   <h4>Next steps:</h4>
+                   <ol>
+                      <li>Check if you have published blog posts</li>
+                      <li>Verify RSS feed is enabled in Publii → Settings → RSS</li>
+                      <li>Try visiting <a href="https://djangelic.com//feed.xml" target="_blank">feed.xml</a> directly</li>
+                      <li>Check if posts are published (not drafts)</li>
+                   </ol>
+                </div>
+                <p><a href="https://djangelic.com/" style="color: #007cba;">Visit the main site</a> to view all posts.</p>
+             </div>
+          `;
+          return;
+       }
+       
+       const url = feedUrls[urlIndex];
+       console.log('Trying RSS feed URL:', url);
+       
+       fetch(url)
+          .then(response => {
+             console.log('Response status:', response.status, response.statusText);
+             if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+             }
+             return response.text();
+          })
+          .then(data => {
+             console.log('RSS feed data received, length:', data.length);
+             console.log('First 500 characters:', data.substring(0, 500));
+             
+             const parser = new DOMParser();
+             const xmlDoc = parser.parseFromString(data, 'text/xml');
+             
+             // Check for parsing errors
+             const parseError = xmlDoc.querySelector('parsererror');
+             if (parseError) {
+                console.error('XML parsing error:', parseError.textContent);
+                throw new Error('XML parsing failed');
+             }
+             
+             const items = xmlDoc.querySelectorAll('item');
+             console.log('Found', items.length, 'posts in RSS feed');
+             
+             // Also check for entries (Atom format)
+             const entries = xmlDoc.querySelectorAll('entry');
+             console.log('Found', entries.length, 'entries in RSS feed');
+             
+             const allItems = items.length > 0 ? items : entries;
+             
+             container.innerHTML = '';
+             
+             if (allItems.length === 0) {
+                container.innerHTML = `
+                   <div style="text-align: center; padding: 2rem;">
+                      <h3>📭 No Posts Found</h3>
+                      <p>No posts found in RSS feed at: <code>${url}</code></p>
+                      <div style="text-align: left; max-width: 500px; margin: 1rem auto; background: #f5f5f5; padding: 1rem; border-radius: 8px;">
+                         <h4>This could mean:</h4>
+                         <ul>
+                            <li>No blog posts have been published yet</li>
+                            <li>All posts are in draft status</li>
+                            <li>RSS feed is empty</li>
+                         </ul>
+                         <h4>To fix this:</h4>
+                         <ol>
+                            <li>Create and publish at least one blog post</li>
+                            <li>Make sure posts are published (not drafts)</li>
+                            <li>Check Publii RSS settings</li>
+                         </ol>
+                      </div>
+                   </div>
+                `;
+                return;
+             }
+             
+             allItems.forEach(item => {
+                const title = item.querySelector('title')?.textContent || '';
+                const link = item.querySelector('link')?.textContent || '';
+                const description = item.querySelector('description')?.textContent || '';
+                const pubDate = item.querySelector('pubDate')?.textContent || '';
+                const author = item.querySelector('dc\\:creator')?.textContent || item.querySelector('author')?.textContent || '';
+                
+                console.log('Processing post:', title);
+                
+                // Create post element
+                const postElement = document.createElement('article');
+                postElement.className = 'blog-post';
+                
+                // Format date
+                let formattedDate = '';
+                if (pubDate) {
+                   try {
+                      const date = new Date(pubDate);
+                      formattedDate = date.toLocaleDateString('en-US', {
+                         year: 'numeric',
+                         month: 'long',
+                         day: 'numeric'
+                      });
+                   } catch (e) {
+                      formattedDate = pubDate;
+                   }
+                }
+                
+                // Create post HTML
+                postElement.innerHTML = `
+                   <h2><a href="${link}">${title}</a></h2>
+                   <div class="blog-post-meta">
+                      ${author ? `<span>By ${author}</span> • ` : ''}
+                      ${formattedDate ? `<time>${formattedDate}</time>` : ''}
+                   </div>
+                   <div class="blog-post-excerpt">${description}</div>
+                `;
+                
+                container.appendChild(postElement);
+             });
+          })
+          .catch(error => {
+             console.error('Error fetching RSS feed from', url, ':', error);
+             // Try next URL
+             tryFetchFeed(urlIndex + 1);
+          });
+    }
+    
+    // Start trying feeds
+    tryFetchFeed();
 });</script>
