@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (iconName === 'n8n') {
                     // Create custom n8n icon using favicon
                     const icon = document.createElement('img');
-                    icon.src = 'https://n8n.io/favicon.ico';
+                    icon.src = 'https://uploads.n8n.io/templates/logo-n8n-symbol-white.svg';
                     icon.alt = 'n8n';
                     icon.style.width = '1em';
                     icon.style.height = '1em';
@@ -137,6 +137,66 @@ document.addEventListener('DOMContentLoaded', function() {
                     const textNode = document.createTextNode(' ' + textWithoutHTML);
                     item.appendChild(textNode);
                     console.log('Added text node for HTML:', textWithoutHTML);
+                }
+            }
+            // Check if the innerHTML contains FontAwesome HTML (both encoded and non-encoded)
+            else if (innerHTML.match(/<i class="([^"]+)"><\/i>/) || innerHTML.match(/&lt;i class="([^"]+)"&gt;&lt;\/i&gt;/)) {
+                let iconClass;
+                let textWithoutHTML;
+                
+                // Check for regular HTML first
+                if (innerHTML.match(/<i class="([^"]+)"><\/i>/)) {
+                    iconClass = innerHTML.match(/<i class="([^"]+)"><\/i>/)[1];
+                    textWithoutHTML = originalText.replace(/<i class="([^"]+)"><\/i>/, '').trim();
+                } else {
+                    // Check for encoded HTML
+                    iconClass = innerHTML.match(/&lt;i class="([^"]+)"&gt;&lt;\/i&gt;/)[1];
+                    textWithoutHTML = originalText.replace(/&lt;i class="([^"]+)"&gt;&lt;\/i&gt;/, '').trim();
+                }
+                
+                console.log('Processing innerHTML icon:', iconClass, 'Text without HTML:', textWithoutHTML);
+                
+                // Check for custom icon mappings first
+                if (iconClass === 'fa-brands fa-n8n') {
+                    // Create custom n8n icon using favicon
+                    const icon = document.createElement('img');
+                    icon.src = 'https://n8n.io/favicon.ico';
+                    icon.alt = 'n8n';
+                    icon.style.width = '1em';
+                    icon.style.height = '1em';
+                    icon.style.verticalAlign = 'middle';
+                    
+                    // Clear content and add icon + text
+                    item.textContent = '';
+                    item.appendChild(icon);
+                    
+                    // Add the remaining text after the icon
+                    if (textWithoutHTML) {
+                        const textNode = document.createTextNode(' ' + textWithoutHTML);
+                        item.appendChild(textNode);
+                        console.log('Added text node for n8n (innerHTML):', textWithoutHTML);
+                    }
+                    return;
+                }
+                
+                // Only process if it's a FontAwesome icon
+                if (!iconClass.includes('fa-')) {
+                    return;
+                }
+                
+                // Create the icon element
+                const icon = document.createElement('i');
+                icon.className = iconClass;
+                
+                // Clear content and add icon + text
+                item.textContent = '';
+                item.appendChild(icon);
+                
+                // Add the remaining text after the icon
+                if (textWithoutHTML) {
+                    const textNode = document.createTextNode(' ' + textWithoutHTML);
+                    item.appendChild(textNode);
+                    console.log('Added text node for innerHTML:', textWithoutHTML);
                 }
             } else {
                 console.log('No shortcode or HTML found for button', index);
