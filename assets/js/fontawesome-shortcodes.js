@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (iconClass === 'fa-brands fa-n8n') {
                     // Create custom n8n icon using favicon
                     const icon = document.createElement('img');
-                    icon.src = 'https://raw.githubusercontent.com/djangelic/journal/refs/heads/main/media/files/logo-n8n-symbol-white.ico';
+                    icon.src = 'https://n8n.io/favicon.ico';
                     icon.alt = 'n8n';
                     icon.style.width = '1em';
                     icon.style.height = '1em';
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (iconClass === 'fa-brands fa-n8n') {
                     // Create custom n8n icon using favicon
                     const icon = document.createElement('img');
-                    icon.src = 'https://raw.githubusercontent.com/djangelic/journal/refs/heads/main/media/files/logo-n8n-symbol-white.ico';
+                    icon.src = 'https://n8n.io/favicon.ico';
                     icon.alt = 'n8n';
                     icon.style.width = '1em';
                     icon.style.height = '1em';
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (iconName === 'n8n') {
                     // Create custom n8n icon using favicon
                     const icon = document.createElement('img');
-                    icon.src = 'https://raw.githubusercontent.com/djangelic/journal/refs/heads/main/media/files/logo-n8n-symbol-white.ico';
+                    icon.src = 'https://n8n.io/favicon.ico';
                     icon.alt = 'n8n';
                     icon.style.width = '1em';
                     icon.style.height = '1em';
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (iconClass === 'fa-brands fa-n8n') {
                     // Create custom n8n icon using favicon
                     const icon = document.createElement('img');
-                    icon.src = 'https://raw.githubusercontent.com/djangelic/journal/refs/heads/main/media/files/logo-n8n-symbol-white.ico';
+                    icon.src = 'https://n8n.io/favicon.ico';
                     icon.alt = 'n8n';
                     icon.style.width = '1em';
                     icon.style.height = '1em';
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (iconClass === 'fa-brands fa-n8n') {
                     // Create custom n8n icon using favicon
                     const icon = document.createElement('img');
-                    icon.src = 'https://raw.githubusercontent.com/djangelic/journal/refs/heads/main/media/files/logo-n8n-symbol-white.ico';
+                    icon.src = 'https://n8n.io/favicon.ico';
                     icon.alt = 'n8n';
                     icon.style.width = '1em';
                     icon.style.height = '1em';
