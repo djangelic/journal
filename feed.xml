@@ -3,12 +3,101 @@
     <title>Djangelic&#x27;s Journal</title>
     <link href="https://djangelic.com/feed.xml" rel="self" />
     <link href="https://djangelic.com" />
-    <updated>2025-08-17T23:08:19-07:00</updated>
+    <updated>2025-08-26T11:09:00-07:00</updated>
     <author>
         <name>Angel</name>
     </author>
     <id>https://djangelic.com</id>
 
+    <entry>
+        <title>Work Trip to San Fransisco California</title>
+        <author>
+            <name>Angel</name>
+        </author>
+        <link href="https://djangelic.com/work-trip-to-san-fransisco-california.html"/>
+        <id>https://djangelic.com/work-trip-to-san-fransisco-california.html</id>
+        <media:content url="https://djangelic.com/media/posts/213/IMG_1752.JPG" medium="image" />
+            <category term="n8n"/>
+            <category term="Travel"/>
+
+        <updated>2025-08-24T22:08:20-07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://djangelic.com/media/posts/213/IMG_1752.JPG" alt="" />
+                    Success measured by output. We got a lot done. A (mostly) working&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://djangelic.com/media/posts/213/IMG_1752.JPG" class="type:primaryImage" alt="" /></p>
+                <p>Success measured by output. We got a lot done. A (mostly) working UI and full database schema ready to go. In that time we spent a lot of time at the Salesforce tower. A really pretty building that we had the priviledge to work there. </p>
+<p><strong>Day 1: Hitting the ground running. </strong></p>
+<p>I landed and pretty quickly went to the office to work with Dylan. On a steady diet of coffee, we pumped out a beautiful website UI and database scheme that worked with n8n to provide a powerful backend, and a useful front end. I can't wait to demo it!<br><br></p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00001.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00001-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00002.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00002-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00003.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00003-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00004.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00004-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00005.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00005-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00006.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00006-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00007.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00007-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00008.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00008-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00009.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00009-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00010.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00010-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00011.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00011-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00012.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00012-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00013.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00013-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00014.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00014-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00015.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00015-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00016.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00016-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00017.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00017-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00018.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00018-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00019.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00019-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00020.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00020-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00021.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00021-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00022.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00022-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00023.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00023-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00024.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00024-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00025.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00025-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00026.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00026-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00027.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00027-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00028.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00028-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00029.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00029-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00030.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00030-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00031.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00031-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00032.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00032-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00033.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00033-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00034.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00034-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00035.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00035-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00036.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00036-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00037.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00037-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00038.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00038-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00040.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00040-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00041.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-20-Image00041-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+</div></div>
+<p><strong>Day 2: Work and Prep for Meetup</strong></p>
+<p>It was really difficult to stop working on the Content Creators dashboard and shift gears to prepping for the community meetup, but we did, and it went really well. A lot of the things that were issues before, like having too many speakers were fixed by having less speakers and more Q&amp;A time. I think it really made the audience feel involved.</p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00042.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00042-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00043.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00043-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00044.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00044-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00045.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00045-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00046.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00046-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00047.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00047-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00048.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00048-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00049.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00049-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00050.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00050-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00051.jpg" data-size="1067x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-21-Image00051-thumbnail.jpg" alt="" width="768" height="576"></a></figure>
+</div></div>
+<p><strong>Day 3 - Work from Hotel Lobby Day</strong></p>
+<p>The last day was pretty uneventful. I hung out in hotel lobby and worked on various projects and had a few meetings. </p>
+<p>Also, lesson learned, a USB C fast charger will trickle charge a Macbook Pro. </p>
+<div class="gallery-wrapper"><div class="gallery"  data-is-empty="false" data-translation="Add images" data-columns="3">
+<figure class="gallery__item"><a href="https://djangelic.com/media/posts/213/gallery/2025-08-22-Image00052.jpg" data-size="600x800"><img loading="lazy" src="https://djangelic.com/media/posts/213/gallery/2025-08-22-Image00052-thumbnail.jpg" alt="" width="600" height="800"></a></figure>
+</div></div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>New York in August: Work, Bagels, and a Bit of Adventure</title>
         <author>
@@ -830,31 +919,6 @@ if (Test-Path 'C:\Users\USER\OneDrive\Desktop\Old Business Notes\output.csv') {
         <content type="html">
             <![CDATA[
                 <p>Today’s shift started like any other, with the buzz of a busy airport and the anticipation of a long flight from Baltimore-Washington International (BWI) to Phoenix (PHX). However, an unexpected delay on the runway in Phoenix hinted that this wasn’t going to be a typical day. Passengers, understandably frustrated, made their displeasure known, creating a challenging atmosphere for us, the cabin crew.</p><p>In the midst of managing passenger concerns and navigating crew scheduling complexities, an urgent call over the intercom transformed the nature of the flight. As I was collecting trash, preparing for our descent, a request for a medical doctor echoed through the cabin, signaling a serious situation unfolding at the back of the plane.</p><p>Rushing to assist, I found a scene of quiet urgency. A passenger, a lady seated towards the rear, was receiving oxygen, her eyes closed, her responses faint. The calm professionalism of my colleague, the second flight attendant (#2), amidst the tension was admirable. He briefed me on the situation: the passenger had complained of nausea and chest pains, prompting him to administer oxygen.</p><p>The situation escalated quickly. Three passengers, identifying themselves as doctors, gathered around the ailing woman, providing immediate care. Their consensus was clear – we needed medical personnel ready on the ground. The pilot and our lead flight attendant (#1) were informed, and arrangements were made for Emergency Medical Technicians (EMTs) to meet us upon landing.</p><p>The landing was tense but smooth. As the aircraft taxied to the gate, the passenger’s condition worsened, slumping in her seat. The doctors, with practiced efficiency, laid her across the row of seats, preparing her for immediate transfer. Upon arrival, EMTs boarded swiftly, expertly maneuvering the aisle chair to transport the patient.</p><p>As the other passengers deplaned, a mixture of concern and relief was palpable in the air. Our team worked seamlessly, ensuring everyone disembarked safely and efficiently. Once the plane was empty, we headed to our hotel, the day’s events leaving us with a mix of emotions – gratitude for the skillful doctors on board, relief that the passenger received timely care, and a renewed sense of camaraderie and resilience as a crew.</p><p>Reflecting on the day, it was a vivid reminder of the unpredictability of airline travel and the critical role of flight attendants in managing emergencies. Despite the initial challenges and the unexpected medical emergency, our team’s dedication and quick response ensured the safety and well-being of everyone on board. It was a day that underscored the importance of teamwork, preparedness, and compassion in the skies.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Beyond the Skies: Exploring the World Through a Flight Attendant’s Lens</title>
-        <author>
-            <name>Angel</name>
-        </author>
-        <link href="https://djangelic.com/beyond-the-skies-exploring-the-world-through-a-flight-attendants-lens.html"/>
-        <id>https://djangelic.com/beyond-the-skies-exploring-the-world-through-a-flight-attendants-lens.html</id>
-        <media:content url="https://djangelic.com/media/posts/17/IMG_0618.JPG" medium="image" />
-            <category term="Travel"/>
-            <category term="Flight Attendant"/>
-
-        <updated>2017-06-05T22:32:00-07:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://djangelic.com/media/posts/17/IMG_0618.JPG" alt="" />
-                    As a flight attendant, you would think that travel to exotic destinations&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://djangelic.com/media/posts/17/IMG_0618.JPG" class="type:primaryImage" alt="" /></p>
-                <p>As a flight attendant, you would think that travel to exotic destinations and international locales would be a given. Sadly, as my latest trip has shown, not all flight attendants travel for fun. I’m currently on a trip to Lesvos, Greece with a small tour group that caters specifically to flight attendants. So far, it has been an amazing experience getting to know everyone. I feel like flight attendants are consistently some of the coolest people you can meet.</p><p>Each person is different and unique, but our job unites us in a way that makes us all feel like family. Our struggles and lifestyles are similar, creating a camaraderie that anyone in the workplace can understand.</p><p>It’s interesting how many of our travelers are experiencing their first international trip. As flight attendants, our jobs can be so hectic that traveling for fun can seem pretty daunting. When you’re told where to fly, where to stay, and when to work, it can create a sense of complacency. Instead of building independence, the job can breed familiarity and routine.</p><p>When we fly for work, every aspect of the trip is handled for us. Our apps tell us where we need to be, who will pick us up, and even give us access to our contracts, which offer protections and limits on what we have to deal with.</p><p>Compare that to traveling on your own, where you’re in complete control—and responsible for—everything. Want a hotel? You have to book it. Need a flight? That’s on you. Transportation? Better plan it yourself unless your accommodations provide it. Stuck at the airport because flights are full? No contract is going to get you out of that one.</p><p>That’s why I believe travel is good for you. It builds confidence. It forces you to solve problems you wouldn’t normally encounter and pushes you out of your comfort zone. It gives you stories and experiences that no one can take away. It makes you a more interesting and well-rounded person. And when you’re with friends, it gives you something to talk about.</p><p>Over the years, I’ve been fortunate to visit a long and varied list of places. Every few months, I feel the pull to explore somewhere new—a different country, a fresh experience, a unique culture. It’s addictive, especially when your flights cost about as much as a bus ride. My hope is to someday find the perfect place to retire. Until then, I’ll keep chasing that wanderlust and seeing where the next adventure leads.</p>
             ]]>
         </content>
     </entry>
