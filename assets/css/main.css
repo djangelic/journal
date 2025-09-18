@@ -625,6 +625,26 @@ textarea {
   }
 }
 
+/* Full-width page styles */
+.page--fullwidth {
+  grid-area: main;
+}
+
+.page--fullwidth .main__inner--fullwidth {
+  max-width: var(--page-width);
+  width: 100%;
+}
+
+@media all and (min-width: 56.25em) {
+  .page--fullwidth {
+    border-right: none;
+  }
+  
+  .page--fullwidth .main__inner--fullwidth {
+    padding: calc(var(--baseline) * 16) var(--page-margin) calc(var(--baseline) * 12);
+  }
+}
+
 .right-bar {
   grid-area: right-bar;
 }
