@@ -716,8 +716,39 @@ textarea {
 /* Fix mobile padding for full-width pages */
 @media all and (max-width: 55.9375em) {
   .page--fullwidth .main__inner--fullwidth {
-    padding: calc(var(--baseline) * 10) var(--page-margin);
+    padding: calc(var(--baseline) * 8) 1rem;
     margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  /* Ensure content doesn't overflow on mobile */
+  .page--fullwidth .content__entry {
+    overflow-x: auto;
+    word-wrap: break-word;
+  }
+  
+  /* Fix any potential margin issues */
+  .page--fullwidth .content__header,
+  .page--fullwidth .content__entry {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Ensure images are responsive */
+  .page--fullwidth .content__entry img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Fix banner sections on mobile */
+  .page--fullwidth .banner .main__inner--fullwidth {
+    padding: calc(var(--baseline) * 6) 1rem;
+  }
+  
+  /* Fix subpages section on mobile */
+  .page--fullwidth .subpages .main__inner--fullwidth {
+    padding: calc(var(--baseline) * 6) 1rem;
   }
 }
 
