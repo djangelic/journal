@@ -713,6 +713,14 @@ textarea {
   }
 }
 
+/* Fix mobile padding for full-width pages */
+@media all and (max-width: 55.9375em) {
+  .page--fullwidth .main__inner--fullwidth {
+    padding: calc(var(--baseline) * 10) var(--page-margin);
+    margin: 0;
+  }
+}
+
 .right-bar {
   grid-area: right-bar;
 }
