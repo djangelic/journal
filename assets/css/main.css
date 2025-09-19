@@ -715,24 +715,35 @@ textarea {
 
 /* Fix mobile padding for full-width pages */
 @media all and (max-width: 55.9375em) {
+  /* Completely override any inherited padding/margins */
+  .page--fullwidth {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
   .page--fullwidth .main__inner--fullwidth {
-    padding: calc(var(--baseline) * 8) 1rem;
-    margin: 0;
-    max-width: 100%;
-    width: 100%;
+    padding: calc(var(--baseline) * 6) 0.5rem !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
   
   /* Ensure content doesn't overflow on mobile */
   .page--fullwidth .content__entry {
     overflow-x: auto;
     word-wrap: break-word;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   
   /* Fix any potential margin issues */
   .page--fullwidth .content__header,
   .page--fullwidth .content__entry {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   
   /* Ensure images are responsive */
@@ -743,12 +754,18 @@ textarea {
   
   /* Fix banner sections on mobile */
   .page--fullwidth .banner .main__inner--fullwidth {
-    padding: calc(var(--baseline) * 6) 1rem;
+    padding: calc(var(--baseline) * 4) 0.5rem !important;
   }
   
   /* Fix subpages section on mobile */
   .page--fullwidth .subpages .main__inner--fullwidth {
-    padding: calc(var(--baseline) * 6) 1rem;
+    padding: calc(var(--baseline) * 4) 0.5rem !important;
+  }
+  
+  /* Override any container constraints */
+  .page--fullwidth .content {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
