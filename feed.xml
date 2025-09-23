@@ -3,7 +3,7 @@
     <title>Djangelic&#x27;s Journal</title>
     <link href="https://djangelic.com/feed.xml" rel="self" />
     <link href="https://djangelic.com" />
-    <updated>2025-09-21T14:17:27-07:00</updated>
+    <updated>2025-09-22T22:25:34-07:00</updated>
     <author>
         <name>Angel</name>
     </author>
@@ -45,7 +45,7 @@
 <li><strong>Take the photo</strong> on iPhone.</li>
 <li><strong>Transfer to PC</strong> with <em><a href="https://rambax.com/simpletransfer" target="_blank" rel="noopener noreferrer">SimpleTransfer</a></em>, converting from HEIC to JPG.</li>
 <li><strong>Fix orientation (if needed)</strong>: if it’s vertical, rotate to landscape—otherwise the camera prints it tiny.</li>
-<li><strong>Insert the SD card</strong>: pull it from the camera and plug it into the computer.</li>
+<li><strong>Insert the SD card</strong>: pull it from the camera and plug it into the computer. (alternatively just plug in the camera and point the output folder to the SD Card).</li>
 <li><strong>Batch convert with <a href="https://www.faststone.org/FSResizerDetail.htm" target="_blank" rel="noopener noreferrer">FastStone</a></strong>:
 <ul>
 <li>Rename files to match <code>PICT####.jpg</code>.</li>
@@ -57,6 +57,9 @@
 <li><strong>Eject &amp; print</strong>: safely remove the card, pop it back in the camera, open <em>Playback</em>, pick the photo, and hit <em>Print</em>.</li>
 </ol>
 <p>That’s it. Do it once or twice and it’s second nature. If you’ve been banging your head trying to get iPhone photos to print on this little camera, this should save you the headache.</p>
+<p>You can also use it to print cute little messages for your kids lunches if you don't have a printer available. I used Chatgpt to generate the background and embedded my message inside it. </p>
+<figure class="post__image"><img loading="lazy"  src="https://djangelic.com/media/posts/220/signal-2025-09-22-222043.jpeg" alt="" width="810" height="1080" sizes="(min-width: 760px) 660px, calc(93.18vw - 30px)" srcset="https://djangelic.com/media/posts/220/responsive/signal-2025-09-22-222043-xs.jpeg 320w ,https://djangelic.com/media/posts/220/responsive/signal-2025-09-22-222043-sm.jpeg 480w ,https://djangelic.com/media/posts/220/responsive/signal-2025-09-22-222043-md.jpeg 768w ,https://djangelic.com/media/posts/220/responsive/signal-2025-09-22-222043-xl.jpeg 1024w"></figure>
+<p> </p>
 </section>
             ]]>
         </content>
